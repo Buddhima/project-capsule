@@ -1,0 +1,6 @@
+com/project/capsule/ApplicationConfig$JerseyConfig.class
+com/project/capsule/bean/PatientReport.class
+com/project/capsule/ApplicationConfig.class
+com/project/capsule/PatientReportRepository.class
+com/project/capsule/rest/PatientReportService.class
+com/project/capsule/Application.class

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+This is LIPID report
+
+<form action="/report/add" method="POST">
+
+    <!-- basic elements -->
+    <table>
+        <tbody>
+            <tr>
+                <td>Patient's name : </td>
+                <td><input name="name" type="text" th:value="${name}"/></td>
+            </tr>
+            <tr>
+                <td>Age : </td>
+                <td><input name="age" type="text" th:value="${age}"/> years </td>
+            </tr>
+            <tr>
+                <td>Sex : </td>
+                <td><input name="sex" type="text" th:value="${sex}"/></td>
+            </tr>
+            <tr>
+                <td>Doctor's name : </td>
+                <td><input name="doctorName" type="text" th:value="${doctorName}"/></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <br/>
+    <br/>
+
+    <!-- report specific elements -->
+    <table>
+        <tbody>
+        <tr>
+            <td>Total Cholesterol : </td>
+            <td><input name="TotalCholesterol" type="text" th:value="${TotalCholesterol}"/></td>
+        </tr>
+        <tr>
+            <td>Triglycerides : </td>
+            <td><input name="Triglycerides" type="text" th:value="${Triglycerides}"/></td>
+        </tr>
+
+        </tbody>
+    </table>
+    <br/>
+
+    <!-- other essential elements -->
+    <input name="reportType" value="LIPID" type="hidden"/>
+    <input type="submit" value="Submit" th:hidden="${hideSubmit}"/>
+
+</form>
+
+
+</body>
+</html>

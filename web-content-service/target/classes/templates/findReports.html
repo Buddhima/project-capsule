@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<form action="/report/find" method="POST">
+
+    <table>
+        <tbody>
+        <tr>
+            <td>Patient Name : </td>
+            <td><input name="name" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Time From : </td>
+            <td><input name="timeFrom" /></td>
+        </tr>
+        <tr>
+            <td>Time To : </td>
+            <td><input name="timeTo" /></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <input type="submit" value="Submit"/>
+
+</form>
+
+
+
+</body>
+</html>
